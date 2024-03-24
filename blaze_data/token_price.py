@@ -43,8 +43,7 @@ def get_token(chain,start_date,end_date):
     if response["status"] == "success":
         token_prices = response["data"]
         token_prices_dict = {price['date']: price['price'] for price in token_prices}
-        print("Token Prices Dictionary:")
-        print(token_prices_dict)
+        
 
         return token_prices_dict
     else:
