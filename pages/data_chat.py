@@ -3,9 +3,10 @@ from openai import OpenAI
 from blaze_data_api import get_blaze_data
 import os
 from dotenv import load_dotenv
+load_dotenv()
 api_key=os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
-avatar_img = "D:\Crypto-Companion\static\Crypto-Companion-L-avatar.png"
+avatar_img = "static\Crypto-Companion-L-avatar.png"
 st.set_page_config(
     page_title="Ask CryptoCompanion", page_icon=avatar_img)
 

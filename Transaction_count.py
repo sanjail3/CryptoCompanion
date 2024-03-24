@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = 'dc94ca40-4214-46e2-890c-08ec548670d9'
+
 
 def get_active_users(chain, start_date, end_date):
     # Endpoint URL
