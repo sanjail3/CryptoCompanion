@@ -97,8 +97,7 @@ def get_walletportfolio(wallet_address):
             "lastTransactionDate": last_transaction_date
         }
 
-        # Print or use the dictionary as needed
-        print("Wallet Info:", wallet_info)
+     
 
         return wallet_info
 
