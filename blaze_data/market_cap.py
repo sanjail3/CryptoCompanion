@@ -44,8 +44,7 @@ def get_marketcap_data(chain,start_date,end_date):
     if response["status"] == "success":
         market_cap= response["data"]
         market_cap_dict = {price['date']: price['market_cap'] for price in  market_cap}
-        print("Token Prices Dictionary:")
-        print( market_cap_dict)
+        
 
         return  market_cap_dict
     else:
