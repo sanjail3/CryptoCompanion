@@ -105,11 +105,11 @@ def get_chain_data(wallet_address):
     wallet_holdings = fetch_data_for_wallet(wallet_address, API_KEY)
 
     token_data = parse_and_store_tokens(wallet_holdings)
-    print("Token Data:")
+    
     chain_holding = {}
     for token_name, data in token_data.items():
         chain_holding[token_name] = data['count']
         print(f"Chain: {token_name}, Count: {data['count']}")
 
-    print(chain_holding)
+   
 
