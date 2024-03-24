@@ -44,12 +44,9 @@ def get_active_users_data(chain,start_date,end_date):
     if response["status"] == "success":
         active_users= response["data"]
         active_users_dict = {price['date']: price['active_users'] for price in  active_users}
-        print("Token Prices Dictionary:")
-        print( active_users_dict)
+       
 
         return  active_users_dict
     else:
         print("Failed to fetch token prices.")
 
-
-get_active_users_data("","","")
