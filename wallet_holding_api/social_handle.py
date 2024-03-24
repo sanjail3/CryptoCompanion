@@ -64,8 +64,7 @@ def get_socialmedia_handle(wallet_address):
             "telegramHandles": telegram_handles
         }
 
-        # Print or use the dictionary as needed
-        print("Social Media Handles:", social_media_handles)
+       
 
         return social_media_handles
 
