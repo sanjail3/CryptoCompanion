@@ -57,7 +57,7 @@ def get_wallet_score(wallet_address):
         }
 
 
-        print("Scores:", scores_dict)
+       
 
         return scores_dict
 
